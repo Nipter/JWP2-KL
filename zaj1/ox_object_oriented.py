@@ -12,12 +12,10 @@ class Board:
     @board.setter
     def board(self, board):
         self.__board = board
-
-    def get_blank_board(self):
         """Tworzy nową, pustą planszę gry w kółko i krzyżyk."""
+        # Wszystkie pola na początku są puste.
         for space in self.ALL_SPACES:
-            self.__board[space] = self.BLANK  # Wszystkie pola na początku są puste.
-        return self.__board
+            self.__board[space] = self.BLANK
 
     def get_board_str(self):
         """Zwraca tekstową reprezentację planszy."""

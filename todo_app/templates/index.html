@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista TODO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista TODO</h1>
+        <input type="text" id="todo-name" placeholder="Nazwa zadania">
+        <textarea id="todo-description" placeholder="Opis zadania"></textarea>
+        <button id="add-btn">Dodaj</button>
+        <ul id="todo-list"></ul>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
